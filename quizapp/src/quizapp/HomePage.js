@@ -8,7 +8,7 @@ const HomePage = () => {
 
   const pagechange=()=>
   {
-    navigate('/app');
+    navigate('/app');//path
   }
   return (
     

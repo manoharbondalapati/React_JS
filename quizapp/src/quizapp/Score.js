@@ -15,7 +15,7 @@ const Score = ({ score }) => {
             <h4 id="score">Your score: {score}</h4><hr></hr>
             <h1 className="thank">Thank You!...</h1>
             <h5>Back to <span><button onClick={gotohome}>Home</button></span></h5>
-        </div>
+         </div>
     );
 };
 

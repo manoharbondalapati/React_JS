@@ -20,8 +20,7 @@ class Options extends React.Component
                         />
                          <label className='fom-check-lable'>{option}</label>
                         </div>))}
-
-            </div>
+                    </div>
         )
     }
 }

@@ -20,8 +20,7 @@ class Question extends React.Component
                     />
                    <button type="submit" id='questionbtn' className='btn btn-primary mt-2'>Submit</button>
                 </form>
-
-            </div>
+                </div>
         )
     }
 }

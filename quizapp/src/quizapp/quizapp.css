@@ -4,9 +4,7 @@
 }
 
 .container {
-    /* display: flex;
-    justify-content: space-between; */
-    /* align-items: center; */
+    
     padding: 20px;
     margin: 5% 10% 0% 10%;
     max-width: 500px;
@@ -17,16 +15,7 @@
     color: royalblue;
   }
   
-  /* .content {
-    flex: 1;
-    
-   
-  } */
-/*   
-  img {
-    max-width: 100%;
-    height: 400px;
-  } */
+ 
 button
 {
     margin-left: 100px;
