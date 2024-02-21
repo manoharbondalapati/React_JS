@@ -34,6 +34,12 @@ const questions=
         options:["JavaScript of Notation","JavaScript Object Notation","JavaScript Object Nature","JavaScript Object Number"],
         answer:"JavaScript Object Notation",
     },
+    {
+        id:6,
+        question:"What is the full form of JS?",
+        options:["JavaScript","JSON","JSON Script","Non Of the above"],
+        answer:"JavaScript",
+    },
 
 ]
 

@@ -8,14 +8,14 @@ const HomePage = () => {
 
   const pagechange=()=>
   {
-    navigate('/app');//path
+    navigate('/app');
   }
   return (
     
-    <div class="container">
-    <div class="content">
+    <div className="container">
+    <div className="content">
       <h1 id="heading">Welcome!..</h1>
-      <h2>Quiz App</h2>
+      <h2>Quiz ApP</h2>
       <p>Quizzes help one gain a broad or specialized understanding 
       of a subject. Quizzes are intended to encourage funlearning 
       methods while also enhancing general knowledge. 

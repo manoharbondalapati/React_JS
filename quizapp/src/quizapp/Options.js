@@ -1,27 +1,23 @@
 import React from 'react';
 
-class Options extends React.Component
-{
-    render()
-    {
-        const  {options, selectedoption,onoptionchange}=this.props;
-
-        return(
-            <div className='options'>
-                {options.map((option,index)=>(
-                    <div key={index} className='form-check'>
-                        <input
+function Options({ options, selectedOption, onOptionChange }) {
+    return (
+        <div className='options'>
+            {options.map((option, index) => (
+                <div key={index} className='form-check'>
+                    <input
                         type='radio'
                         name='option'
                         value={option}
-                        checked={selectedoption===option}
-                        onChange={onoptionchange}
+                        checked={selectedOption === option}
+                        onChange={onOptionChange}
                         className="form-check-input"
-                        />
-                         <label className='fom-check-lable'>{option}</label>
-                        </div>))}
-                    </div>
-        )
-    }
+                    />
+                    <label className='form-check-label'>{option}</label>
+                </div>
+            ))}
+        </div>
+    );
 }
+
 export default Options;
