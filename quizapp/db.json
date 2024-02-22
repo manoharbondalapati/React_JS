@@ -1,8 +1,22 @@
 {
   "posts": [
     {
-      "title": "mcdkm  vdnkv",
-      "id": "07ac"
+      "title": "The Books",
+      "id": 1
+    },
+    {
+      "title": "The Titanic",
+      "isPublished": false,
+      "id": 2
+    },
+    {
+      "title": "The Test",
+      "id": 3
+    },
+    {
+      "title": "The Race",
+      "isPublished": false,
+      "id": 4
     }
   ]
 }

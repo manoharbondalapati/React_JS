@@ -190,21 +190,21 @@ const TodoList = () => {
     setEditedTitle(title);
   };
 
-  // const handleSaveEdit = (id) => {
-  //   // handleEdit(id, editedTitle);
+  const handleSaveEdit = (id) => {
+   // handleEdit(id, editedTitle);
 
-  //   console.log(id,editedTitle);
-  //   axios
-  //     .put(`http://localhost:3002/posts?id=${id}`, { title: editedTitle })
-  //     .then((response) => {
-  //       if (response.status === 200) {
-  //         fetchtitles();
-  //         setEditableId(null);
-  //         setEditedTitle("");
-  //       }
-  //     })
-  //     .catch((error) => console.log(error));
-  // };
+   // console.log(id,editedTitle);
+    axios
+      .put(`http://localhost:3002/posts/${id}`, { title: editedTitle })
+      .then((response) => {
+        if (response.status === 200) {
+          fetchtitles();
+          setEditableId(null);
+          setEditedTitle("");
+        }
+      })
+      .catch((error) => console.log(error));
+  };
 
   return (
     <div className="container">
@@ -230,9 +230,9 @@ const TodoList = () => {
           </tr>
         </thead>
         <tbody>
-          {addlist.map(({ id, title, isPublished }, index) => (
+          {addlist.map(({ id, title, isPublished }) => (
             <tr key={id}>
-              <td>{index + 1}</td>
+              <td>{id}</td>
               <td>
                 {editableId === id ? (
                   <input
@@ -247,7 +247,7 @@ const TodoList = () => {
               <td>{isPublished ? "Yes" : "No"}</td>
               <td id="actionsbutton">
                 {editableId === id ? (
-                  <Button variant="warning" >
+                  <Button variant="warning" onClick={()=>handleSaveEdit(id)} >
                     Save
                   </Button>
                 ) : (
